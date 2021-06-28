@@ -1,0 +1,7 @@
+div{
+    display: flex;
+    flex-direction: row;
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+}

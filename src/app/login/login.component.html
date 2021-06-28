@@ -1,0 +1,19 @@
+<div class="log">
+    <br><br>
+    <h2>Login</h2>
+    <table class="table">
+        <tr>
+            <td>UserName : </td>
+            <td><input type="text" [(ngModel)]="user"></td>
+        </tr>
+        <tr>
+            <td>Password : </td>
+            <td><input type="password" [(ngModel)]="password"></td>
+        </tr>
+        <tr>
+            <td><input type="button"  value="login" (click)="checkLogin()"></td>
+    </table>
+    {{result}}
+
+</div>
+

@@ -1,0 +1,50 @@
+<div class="reg">
+    <br><br>
+    <h2>Register</h2>
+    <table class="table">
+        <tr>
+            <td>UserName</td>
+            <td><input type="text" [(ngModel)]="s.sname" placeholder="Username"></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="email" [(ngModel)]="s.email" placeholder="email"></td>
+        </tr>
+        <tr>
+            <td>Mobile</td>
+            <td><input type="tel" [(ngModel)]="s.mobile" placeholder="mobile"></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" [(ngModel)]="s.password" placeholder="password"></td>
+        </tr>
+        <input type="button" value="Register" (click)="insertStudent()">
+       
+        <!-- <tr>
+            <td><input type="text" [(ngModel)]="s.sname" placeholder="Emp id"></td>
+            <td><input type="text" [(ngModel)]="s.email" placeholder="Emp name"></td>
+            <td><input type="text" [(ngModel)]="s.mobile" placeholder="Emp Salary"></td>
+            <td><input type="text" [(ngModel)]="s.password" placeholder="Emp Salary"></td>
+        </tr> -->
+        
+    </table>
+    <br><br>
+    <table border="1" class="table">
+        <tr>
+            <td>Username</td>
+            <td>Email</td>
+            <td>Mobile</td>
+            <td>Password</td>
+        </tr>
+        <tr  *ngFor="let s of slist; let i=index">
+                <td>{{s.sname}}</td>
+                <td>{{s.email}}</td>
+                <td>{{s.mobile}}</td>
+                <td>{{s.password}}</td>
+        </tr>
+
+    </table>
+
+</div>
+
+
